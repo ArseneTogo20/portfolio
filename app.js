@@ -236,12 +236,15 @@ document.addEventListener('DOMContentLoaded', () => {
                     ========================================<br>
                     [ARCHIVES DES PROJETS - K.A. ATTIKPO]<br>
                     ========================================<br>
-                    - <span class="text-cyan">PROJET_01</span> : Cartographie Sociale & Décisionnelle<br>
-                      &nbsp;&nbsp;Plateforme d'aide à la décision pour infrastructures (Togo).<br>
-                      &nbsp;&nbsp;[Django | PostGIS | Leaflet | GeoPandas]<br>
-                    - <span class="text-cyan">PROJET_02</span> : Supervision Spatiale Réseau<br>
-                      &nbsp;&nbsp;Dashboard d'observabilité temps réel d'incidents télécom.<br>
-                      &nbsp;&nbsp;[Grafana | PostgreSQL | Airflow | Telegraf]
+                    - <span class="text-cyan">PROJET_01</span> : Plateforme SaaS RapidLocate<br>
+                      &nbsp;&nbsp;Solution de géolocalisation et d'intelligence spatiale (SaaS).<br>
+                      &nbsp;&nbsp;[SIG | Routing APIs | PostGIS | GeoPandas]<br>
+                    - <span class="text-cyan">PROJET_02</span> : Segmentation Client (Moov Africa)<br>
+                      &nbsp;&nbsp;Modèle ML non supervisé & dashboard d'aide à la décision.<br>
+                      &nbsp;&nbsp;[Python | HDBSCAN | Streamlit | Docker]<br>
+                    - <span class="text-cyan">PROJET_03</span> : Assistant Médical SANO-VA<br>
+                      &nbsp;&nbsp;Orientation d'urgence via NLP vernaculaire & routage PostGIS.<br>
+                      &nbsp;&nbsp;[Python (NLP) | PostGIS | Android | ML Triage]
                 `;
             } else if (trimmedCmd === 'locate') {
                 outputDiv.innerHTML = `
