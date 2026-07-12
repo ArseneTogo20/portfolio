@@ -1,0 +1,768 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kodjo Arsene Attikpo | Data Scientiste & Analyste Géospatial</title>
+    <meta name="description"
+        content="Portfolio professionnel de Kodjo Arsène Attikpo. Expert en intelligence géospatiale, analyse spatiale, ETL, Python et Cybersécurité à Lomé, Togo.">
+    <meta name="keywords"
+        content="Data Scientist, SIG, Data Engineer, Python, PostGIS, Lomé, Togo, Cybersécurité, Deep Learning Indaba">
+    <meta name="author" content="Kodjo Arsène Attikpo">
+
+    <!-- Google Fonts: Space Grotesk (Titres) et JetBrains Mono (Code/Détails) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Canvas interactif pour le réseau spatial en arrière-plan -->
+    <canvas id="spatial-canvas"></canvas>
+
+    <!-- Header / Navigation Collante -->
+    <header class="main-header">
+        <div class="header-container">
+            <a href="#hero" class="logo">
+                <span class="logo-accent">&lt;</span>K.A. ATTIKPO<span class="logo-accent"> // DATA&gt;</span>
+            </a>
+            <button class="nav-toggle" aria-label="Ouvrir le menu">
+                <span class="hamburger"></span>
+            </button>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="#hero" class="nav-link active"><span>01_</span>PROFIL</a></li>
+                    <li><a href="#competences" class="nav-link"><span>02_</span>COMPETENCES</a></li>
+                    <li><a href="#projets" class="nav-link"><span>03_</span>PROJETS</a></li>
+                    <li><a href="#experiences" class="nav-link"><span>04_</span>EXPERIENCES</a></li>
+                    <li><a href="#engagements" class="nav-link"><span>05_</span>ENGAGEMENTS</a></li>
+                    <li><a href="#contact" class="nav-link"><span>06_</span>CONTACT</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Section Hero -->
+    <section id="hero" class="hero-section">
+        <div class="container hero-container">
+            <div class="hero-content">
+                <div class="system-status">
+                    <span class="status-indicator"></span>
+                    <span class="status-text">SYS_STATUS: ONLINE</span>
+                </div>
+
+                <div class="hero-profile-container">
+                    <img src="photo_de_profil.jpeg" alt="Kodjo Arsène Attikpo" class="hero-profile-img"
+                        onerror="this.src='https://api.dicebear.com/7.x/bottts/svg?seed=Kodjo&backgroundColor=070a13'">
+                </div>
+
+                <h1 class="hero-title">
+                    <span class="title-greet">KODJO ARSÈNE ATTIKPO</span>
+                    <span class="title-sub">Data Scientist & Analyste Géospatial</span>
+                </h1>
+
+                <p class="hero-bio">
+                    Data Scientist & Analyste Géospatial, ancien Ambassadeur « Tech for Peace » du PNUD. Diplômé d'un Master en Big Data & IA et certifié Anglais C1 (Advanced). Acteur engagé de l'écosystème IA en Afrique en tant que Fellow en Éthique & Gouvernance de l'IA. Expert dans la conception de pipelines de données sécurisés, la modélisation prédictive de haute précision et le déploiement de plateformes géospatiales décisionnelles (BI & SIG) au service du développement durable.
+                </p>
+
+                <div class="hero-actions">
+                    <a href="#competences" class="btn btn-primary">Explorer le Réseau</a>
+                    <a href="#contact" class="btn btn-secondary">Initialiser le Contact</a>
+                </div>
+            </div>
+
+            <!-- Dashboard Terminal / Visual Widget -->
+            <div class="hero-widget">
+                <div class="widget-header">
+                    <div class="widget-dots">
+                        <span class="dot red"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green"></span>
+                    </div>
+                    <span class="widget-title">spatial_node_monitor.sh</span>
+                </div>
+                <div class="widget-body">
+                    <div class="terminal-line">
+                        <span class="terminal-prompt">guest@attikpo:~$</span> <span class="terminal-cmd">geolocate
+                            --current-node</span>
+                    </div>
+                    <div class="terminal-output">
+                        <span class="text-green">LOCATING NODE...</span><br>
+                        [SUCCESS] LAT: 6.1372° N | LON: 1.2125° E<br>
+                        [LOCATION] Lomé, Togo<br>
+                        [REGION] Afrique de l'Ouest
+                    </div>
+                    <div class="terminal-line">
+                        <span class="terminal-prompt">guest@attikpo:~$</span> <span class="terminal-cmd">cat
+                            core_capabilities.json</span>
+                    </div>
+                    <div class="terminal-output">
+                        {<br>
+                        &nbsp;&nbsp;"focus": <span class="text-cyan">"Spatial Intelligence"</span>,<br>
+                        &nbsp;&nbsp;"pipelines": <span class="text-cyan">"ETL & Automation"</span>,<br>
+                        &nbsp;&nbsp;"security": <span class="text-green">"Secured Data Flow"</span>,<br>
+                        &nbsp;&nbsp;"status": <span class="text-cyan">"Ready to Deploy"</span><br>
+                        }
+                    </div>
+                    <div class="terminal-line blink-line">
+                        <span class="terminal-prompt">guest@attikpo:~$</span> <span class="terminal-cursor">█</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Compétences -->
+    <section id="competences" class="skills-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title"><span>// 02.</span> CARTOGRAPHIE DES COMPÉTENCES</h2>
+                <div class="section-line"></div>
+            </div>
+
+            <div class="skills-grid">
+                <!-- Carte 1: Analyse Spatiale -->
+                <article class="skill-card">
+                    <div class="card-icon-wrapper">
+                        <!-- SVG Icon radar/spatial -->
+                        <svg class="skill-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.5">
+                            <circle cx="12" cy="12" r="10" stroke-dasharray="3 3" />
+                            <circle cx="12" cy="12" r="6" />
+                            <circle cx="12" cy="12" r="2" />
+                            <line x1="12" y1="2" x2="12" y2="22" />
+                            <line x1="2" y1="12" x2="22" y2="12" />
+                        </svg>
+                    </div>
+                    <h3 class="skill-title">Analyse Spatiale</h3>
+                    <p class="skill-description">
+                        Manipulation avancée de données vectorielles et raster, géocodage de précision, analyse de
+                        proximité et de densité par cartes thermiques (Heatmaps).
+                    </p>
+                    <div class="skill-tags">
+                        <span>Vectoriel/Raster</span>
+                        <span>Géocodage</span>
+                        <span>Densité</span>
+                    </div>
+                </article>
+
+                <!-- Carte 2: Outils SIG & Visualisation -->
+                <article class="skill-card">
+                    <div class="card-icon-wrapper">
+                        <!-- SVG Icon Map/Globe -->
+                        <svg class="skill-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.5">
+                            <polygon points="3 6 9 3 15 6 21 3 21 18 15 21 9 18 3 21" />
+                            <line x1="9" y1="3" x2="9" y2="18" />
+                            <line x1="15" y1="6" x2="15" y2="21" />
+                        </svg>
+                    </div>
+                    <h3 class="skill-title">Outils SIG & Visualisation</h3>
+                    <p class="skill-description">
+                        Développement de cartes interactives décisionnelles et tableaux de bord de monitoring
+                        d'infrastructures à haute disponibilité.
+                    </p>
+                    <div class="skill-tags">
+                        <span>PostGIS</span>
+                        <span>QGIS</span>
+                        <span>Google Earth Engine</span>
+                        <span>Grafana</span>
+                        <span>Streamlit</span>
+                        <span>MapStore</span>
+                        <span>GeoServer</span>
+                        <span>Tableau</span>
+                        <span>Power BI</span>
+                    </div>
+                </article>
+
+                <!-- Carte 3: Ingénierie de Données -->
+                <article class="skill-card">
+                    <div class="card-icon-wrapper">
+                        <!-- SVG Icon Database Stack -->
+                        <svg class="skill-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.5">
+                            <ellipse cx="12" cy="5" rx="9" ry="3" />
+                            <path d="M3 5v6c0 1.66 4 3 9 3s9-1.34 9-3V5" />
+                            <path d="M3 11v6c0 1.66 4 3 9 3s9-1.34 9-3v-6" />
+                        </svg>
+                    </div>
+                    <h3 class="skill-title">Ingénierie de Données</h3>
+                    <p class="skill-description">
+                        Conception et déploiement de pipelines ETL hautement scalables, modélisation de bases de données
+                        relationnelles et distribuées.
+                    </p>
+                    <div class="skill-tags">
+                        <span>Python (GeoPandas)</span>
+                        <span>PostgreSQL</span>
+                        <span>Apache Airflow</span>
+                        <span>Spark</span>
+                        <span>SQL Server</span>
+                    </div>
+                </article>
+
+                <!-- Carte 4: Collecte de Données -->
+                <article class="skill-card">
+                    <div class="card-icon-wrapper">
+                        <!-- SVG Icon Web Scraping / Spiderweb -->
+                        <svg class="skill-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.5">
+                            <path d="M12 2v20M2 12h20" />
+                            <path
+                                d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+                            <path
+                                d="M2 12a15.3 15.3 0 0 1 10-4 15.3 15.3 0 0 1 10 4 15.3 15.3 0 0 1-10 4 15.3 15.3 0 0 1-10-4z" />
+                        </svg>
+                    </div>
+                    <h3 class="skill-title">Collecte de Données</h3>
+                    <p class="skill-description">
+                        Web Scraping ciblé et structuré, requêtage intensif d'APIs géographiques et extraction de
+                        données d'annuaires professionnels en Afrique.
+                    </p>
+                    <div class="skill-tags">
+                        <span>Web Scraping</span>
+                        <span>Google Maps API</span>
+                        <span>OpenStreetMap</span>
+                        <span>Meta API</span>
+                    </div>
+                </article>
+
+                <!-- Carte 5: Cybersécurité -->
+                <article class="skill-card">
+                    <div class="card-icon-wrapper">
+                        <!-- SVG Icon Padlock -->
+                        <svg class="skill-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.5">
+                            <rect x="3" y="11" width="18" height="11" rx="2" ry="2" />
+                            <path d="M7 11V7a5 5 0 0 1 10 0v4" />
+                        </svg>
+                    </div>
+                    <h3 class="skill-title">Cybersécurité</h3>
+                    <p class="skill-description">
+                        Sécurisation des bases de données géospatiales sensibles, encryption des pipelines de transit
+                        des données et contrôle granulaire des droits d'accès.
+                    </p>
+                    <div class="skill-tags">
+                        <span>Flux sécurisés</span>
+                        <span>RBAC</span>
+                        <span>Cryptographie</span>
+                        <span>Postgres SSL</span>
+                    </div>
+                </article>
+
+                <!-- Carte 6: Gouvernance & Éthique de l'IA -->
+                <article class="skill-card">
+                    <div class="card-icon-wrapper">
+                        <!-- SVG Icon Shield + Scales / Balance -->
+                        <svg class="skill-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.5">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                            <path d="M12 8v8M9 11h6" />
+                        </svg>
+                    </div>
+                    <h3 class="skill-title">Gouvernance & Éthique de l'IA</h3>
+                    <p class="skill-description">
+                        Évaluation de la responsabilité algorithmique, mise en œuvre de cadres de protection "safe-by-design" et de politiques publiques de l'IA en Afrique pour prévenir les biais.
+                    </p>
+                    <div class="skill-tags">
+                        <span>AI Ethics</span>
+                        <span>Safe-by-design</span>
+                        <span>Audit Algorithmique</span>
+                        <span>Politiques Publiques</span>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Projets -->
+    <section id="projets" class="projects-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title"><span>// 03.</span> ARCHIVES DES PROJETS</h2>
+                <div class="section-line"></div>
+            </div>
+
+            <div class="projects-grid">
+                <!-- Projet 1 -->
+                <article class="project-card">
+                    <div class="project-img-wrapper">
+                        <img src="https://api.dicebear.com/7.x/identicon/svg?seed=Mayo&backgroundColor=070a13"
+                            alt="Cartographie Sociale" class="project-img"
+                            onerror="this.src='https://api.dicebear.com/7.x/identicon/svg?seed=Project1'">
+                    </div>
+                    <div class="project-content">
+                        <div class="project-meta">PROJET_01 // SIG & SOCIAL</div>
+                        <h3 class="project-title">Cartographie Sociale & Décisionnelle</h3>
+                        <p class="project-description">
+                            Plateforme web cartographique permettant de fusionner des données démographiques et
+                            d'infrastructures pour identifier les zones blanches en services essentiels (santé et
+                            éducation) au Togo.
+                        </p>
+                        <div class="project-tags">
+                            <span>Django</span>
+                            <span>PostGIS</span>
+                            <span>Leaflet</span>
+                            <span>GeoPandas</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link-btn" target="_blank">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path
+                                        d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3" />
+                                </svg>
+                                Voir le Projet
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Projet 2 -->
+                <article class="project-card">
+                    <div class="project-img-wrapper">
+                        <img src="https://api.dicebear.com/7.x/identicon/svg?seed=Moov&backgroundColor=070a13"
+                            alt="Observabilité Réseau" class="project-img"
+                            onerror="this.src='https://api.dicebear.com/7.x/identicon/svg?seed=Project2'">
+                    </div>
+                    <div class="project-content">
+                        <div class="project-meta">PROJET_02 // DASHBOARD & TELECOM</div>
+                        <h3 class="project-title">Supervision Spatiale Réseau</h3>
+                        <p class="project-description">
+                            Dashboard d'observabilité temps réel cartographiant la localisation des incidents sur les
+                            infrastructures télécom physiques pour guider la maintenance préventive.
+                        </p>
+                        <div class="project-tags">
+                            <span>Grafana</span>
+                            <span>PostgreSQL</span>
+                            <span>Airflow</span>
+                            <span>Telegraf</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link-btn" target="_blank">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path
+                                        d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3" />
+                                </svg>
+                                Voir le Projet
+                            </a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Expériences (Timeline) -->
+    <section id="experiences" class="experience-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title"><span>// 04.</span> PARCOURS CHRONOLOGIQUE</h2>
+                <div class="section-line"></div>
+            </div>
+
+            <div class="timeline">
+                <!-- Timeline Item 1 -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">Septembre 2025 – Présent</div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3 class="timeline-role">Analyste de Données Géospatiales</h3>
+                            <span class="timeline-company">Mitsio Motu</span>
+                        </div>
+                        <div class="timeline-location">Lomé, Togo</div>
+                        <ul class="timeline-details">
+                            <li><strong>Analyse Spatiale :</strong> Réalisation d'analyses spatiales avancées et structuration de rapports analytiques pour la planification territoriale et la prise de décision socio-économique.</li>
+                            <li><strong>Développement SIG :</strong> Architecture et déploiement de plateformes géospatiales full-stack (R Shiny, GeoServer, MapServer) pour livrer des tableaux de bord interactifs de web-mapping.</li>
+                            <li><strong>Visualisation Temps Réel :</strong> Intégration d'infrastructures Grafana pour le monitoring en temps réel et la visualisation interactive des indicateurs clés d'infrastructure.</li>
+                            <li><strong>Modélisation d'Impact :</strong> Développement de simulations prédictives d'impact pour guider les décisions de développement durable régional.</li>
+                            <li><strong>Gestion de Bases de Données :</strong> Gestion et optimisation de bases de données spatiales d'envergure (PostGIS/PostgreSQL), garantissant l'intégrité pour les cadres de suivi internationaux.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Timeline Item 2 -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">Juillet 2024 – Juillet 2025</div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3 class="timeline-role">Data Scientist</h3>
+                            <span class="timeline-company">Mayo App / Midzo Tech</span>
+                        </div>
+                        <div class="timeline-location">Lomé, Togo</div>
+                        <ul class="timeline-details">
+                            <li><strong>Modèles de Classification :</strong> Conception, entraînement et déploiement de pipelines de données automatisés et de modèles ML, atteignant 91% de précision pour la segmentation des participants.</li>
+                            <li><strong>APIs REST :</strong> Architecture et déploiement d'APIs REST sécurisées sous Django REST Framework et conteneurs Docker pour fluidifier les flux de transmission des équipes à distance.</li>
+                            <li><strong>Web Scraping :</strong> Développement d'architectures de scraping Python complexes, réduisant le temps d'acquisition manuelle de 60%.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Timeline Item 3 -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">Juillet 2024 – Janvier 2025</div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3 class="timeline-role">Data Scientist Fellow</h3>
+                            <span class="timeline-company">Moov Africa Togo</span>
+                        </div>
+                        <div class="timeline-location">Lomé, Togo</div>
+                        <ul class="timeline-details">
+                            <li><strong>Segmentation Client :</strong> Développement d'un modèle non supervisé de segmentation client (HDBSCAN & Gower Distance) pour identifier des personas cibles précis (Silhouette Score: 0.859).</li>
+                            <li><strong>Reporting Web :</strong> Création d'outils web interactifs et sécurisés (Python, Streamlit) pour le calcul automatisé des indicateurs réglementaires (KPIs) en conformité avec l'ARCEP.</li>
+                            <li><strong>Gouvernance des Données :</strong> Application de protocoles d'anonymisation des données sensibles pour assurer une stricte conformité RGPD.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Timeline Item 4 -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">Avril 2020 – Mai 2024</div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3 class="timeline-role">Data Analyst & Scientist (Freelance / Stagiaire)</h3>
+                            <span class="timeline-company">CMM GABON / MeriSKILL</span>
+                        </div>
+                        <div class="timeline-location">À distance (Gabon / Remote)</div>
+                        <ul class="timeline-details">
+                            <li><strong>Business Intelligence :</strong> Fourniture de solutions analytiques de bout en bout, convertissant des données brutes multi-sectorielles en rapports de BI clairs via Looker, Tableau et Power BI.</li>
+                            <li><strong>Collecte Mobile :</strong> Conception et déploiement de formulaires de collecte de données mobiles avec KoboCollect pour optimiser les enquêtes de terrain.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Timeline Item 5 -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">Mai 2022 – Mars 2023</div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3 class="timeline-role">Data Scientist (Freelance Projet)</h3>
+                            <span class="timeline-company">GPI</span>
+                        </div>
+                        <div class="timeline-location">Lomé, Togo</div>
+                        <ul class="timeline-details">
+                            <li><strong>Projets Machine Learning :</strong> Gestion du cycle de vie complet de projets de ML, incluant des pipelines de prétraitement en vision par ordinateur (Computer Vision) pour l'analyse d'images.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Timeline Item 6 -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">Décembre 2019 – Mars 2021</div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3 class="timeline-role">Business & Data Operations Manager</h3>
+                            <span class="timeline-company">AZUR</span>
+                        </div>
+                        <div class="timeline-location">Lomé, Togo</div>
+                        <ul class="timeline-details">
+                            <li><strong>Opérations Data :</strong> Direction des flux de données et des opérations pour optimiser les performances de l'entreprise et la prise de décision stratégique.</li>
+                            <li><strong>Gouvernance et Équipes :</strong> Management d'équipes cross-fonctionnelles pour simplifier les processus opérationnels, éliminer les goulots d'étranglement et améliorer la gouvernance des données.</li>
+                            <li><strong>Transformation Digitale :</strong> Pilotage de la transition vers la transformation numérique en remplaçant les structures de rapports manuels par des solutions automatisées de Business Intelligence (BI).</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Timeline Item 7 -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">Septembre 2015 – Juillet 2019</div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3 class="timeline-role">Enseignant de Physique et Mathématiques</h3>
+                            <span class="timeline-company">CS Stella Matutina</span>
+                        </div>
+                        <div class="timeline-location">Lomé, Togo</div>
+                        <ul class="timeline-details">
+                            <li><strong>Enseignement Scientifique :</strong> Élaboration de programmes académiques scientifiques et enseignement des mathématiques et de la physique dans les classes STEM avancées, renforçant la pédagogie.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Éducation et Engagements -->
+    <section id="engagements" class="edu-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title"><span>// 05.</span> ÉDUCATION & ENGAGEMENTS</h2>
+                <div class="section-line"></div>
+            </div>
+
+            <div class="edu-grid">
+                <!-- Colonne Éducation -->
+                <div class="edu-col">
+                    <h3 class="col-title">
+                        <svg class="col-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 10v6M2 10l10-5 10 5-10 5z" />
+                            <path d="M6 12v5c0 2 2 3 6 3s6-1 6-3v-5" />
+                        </svg>
+                        ÉDUCATION
+                    </h3>
+
+                    <div class="card-list">
+                        <article class="edu-card">
+                            <div class="card-meta">Master | 2021 - 2024</div>
+                            <h4 class="card-title-sub">Master en Big Data & Intelligence Artificielle</h4>
+                            <p class="card-institution">UCAO-UUT (Université Catholique de l'Afrique de l'Ouest)</p>
+                            <p class="card-text">Spécialisation avancée en analyse de grands volumes de données, bases spatiales PostGIS et Vision par ordinateur pour l'analyse d'images satellitaires.</p>
+                        </article>
+
+                        <article class="edu-card">
+                            <div class="card-meta">Certification | 2024 - 2025</div>
+                            <h4 class="card-title-sub">Certificat en Data Engineering</h4>
+                            <p class="card-institution">UN-CHK Sénégal & DataCamp</p>
+                            <p class="card-text">Construction de pipelines de données robustes, architectures distribuées (Spark), processus ETL automatisés (Airflow) et modélisation SQL sous PostgreSQL.</p>
+                        </article>
+
+                        <article class="edu-card">
+                            <div class="card-meta">Certification | 2022 - 2023</div>
+                            <h4 class="card-title-sub">Certification Professionnelle en Cybersécurité</h4>
+                            <p class="card-institution">Cyber Manpower Academy</p>
+                            <p class="card-text">Sécurisation des infrastructures réseau, cryptographie, gestion des accès et protection contre les menaces numériques (Nmap, Nessus).</p>
+                        </article>
+
+                        <article class="edu-card">
+                            <div class="card-meta">Certification | 2024</div>
+                            <h4 class="card-title-sub">AI Career Essentials (AiCE)</h4>
+                            <p class="card-institution">ALX Africa</p>
+                            <p class="card-text">Compétences clés en Intelligence Artificielle générative, productivité augmentée par l'IA et intégration professionnelle.</p>
+                        </article>
+
+                        <article class="edu-card">
+                            <div class="card-meta">Licence | 2012 - 2016</div>
+                            <h4 class="card-title-sub">Licence en Sciences de la Matière (Physique)</h4>
+                            <p class="card-institution">Université de Lomé, Togo</p>
+                            <p class="card-text">Solide formation fondamentale en modélisation mathématique, thermodynamique, traitement du signal et sciences des matériaux.</p>
+                        </article>
+                    </div>
+                </div>
+
+                <!-- Colonne Engagements & Compétences Secondaires -->
+                <div class="edu-col">
+                    <h3 class="col-title">
+                        <svg class="col-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polygon
+                                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                        </svg>
+                        ENGAGEMENTS & LEADERSHIP
+                    </h3>
+
+                    <div class="card-list">
+                        <article class="edu-card">
+                            <div class="card-meta">Leadership Global | 2026</div>
+                            <h4 class="card-title-sub">Young Health Programme (YHP) Global Leader</h4>
+                            <p class="card-institution">AstraZeneca</p>
+                            <p class="card-text">Sélectionné au sein d'une cohorte mondiale pour promouvoir la santé des jeunes, la résilience communautaire et les technologies pour le développement (T4D).</p>
+                        </article>
+
+                        <article class="edu-card">
+                            <div class="card-meta">Fellowship | Janvier 2026 – Présent</div>
+                            <h4 class="card-title-sub">AI Ethics & Governance Fellow</h4>
+                            <p class="card-institution">Policy Innovation Centre (PIC) / Régional</p>
+                            <p class="card-text">Veille réglementaire et audit des cadres d'éthique de l'IA en Afrique, prévention des biais algorithmiques et conception "safe-by-design" pour les déploiements institutionnels.</p>
+                        </article>
+
+                        <article class="edu-card">
+                            <div class="card-meta">Impact Social | Mai 2025 – Novembre 2025</div>
+                            <h4 class="card-title-sub">Ambassadeur Tech for Peace (Togo & Sénégal)</h4>
+                            <p class="card-institution">PNUD (Programme des Nations Unies pour le Développement)</p>
+                            <p class="card-text">Coordination d'ateliers régionaux sur l'analyse de données et la cybersécurité pour renforcer la cohésion sociale et concevoir des cadres numériques de résilience en Afrique de l'Ouest.</p>
+                        </article>
+
+                        <article class="edu-card">
+                            <div class="card-meta">Recherche | Mars 2024 – Présent</div>
+                            <h4 class="card-title-sub">Reviewer Scientifique International</h4>
+                            <p class="card-institution">Deep Learning Indaba</p>
+                            <p class="card-text">Évaluation par les pairs de projets de recherche avancés en IA et vision par ordinateur pour soutenir la rigueur scientifique de l'écosystème africain.</p>
+                        </article>
+
+                        <article class="edu-card lang-card">
+                            <h4 class="card-title-sub">Compétences Linguistiques & Agile</h4>
+                            <div class="lang-grid">
+                                <div class="lang-item">
+                                    <span class="lang-name">Français</span>
+                                    <span class="lang-level">Langue Maternelle</span>
+                                    <div class="lang-bar">
+                                        <div class="lang-progress" style="width: 100%;"></div>
+                                    </div>
+                                </div>
+                                <div class="lang-item">
+                                    <span class="lang-name">Anglais</span>
+                                    <span class="lang-level">Avancé (C1 EF SET - Score: 62/100)</span>
+                                    <div class="lang-bar">
+                                        <div class="lang-progress" style="width: 90%;"></div>
+                                    </div>
+                                </div>
+                                <div class="lang-item" style="margin-top: 0.5rem; border-top: 1px solid rgba(255,255,255,0.05); padding-top: 0.5rem;">
+                                    <span class="lang-name" style="font-size: 0.8rem; color: var(--text-secondary);">Méthodologies & Upskilling</span>
+                                    <p class="card-text" style="font-size: 0.8rem; margin-top: 0.2rem;">
+                                        Certified Scrum Master (PMI Foundations) | IBM Data Science | DataCamp (Advanced Python, Data Engineering)
+                                    </p>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer & Terminal / Section Contact -->
+    <footer id="contact" class="main-footer">
+        <div class="container footer-container">
+            <div class="section-header">
+                <h2 class="section-title"><span>// 06.</span> INITIALISER UNE TRANSMISSION</h2>
+                <div class="section-line"></div>
+            </div>
+
+            <!-- Terminal Interactif pour le contact -->
+            <div class="terminal-contact">
+                <div class="terminal-header">
+                    <div class="terminal-dots">
+                        <span class="dot red"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green"></span>
+                    </div>
+                    <span class="terminal-title">sec_contact_handshake.sh</span>
+                </div>
+                <div class="terminal-body" id="contact-terminal">
+                    <div class="terminal-line">
+                        <span class="terminal-prompt">visitor@attikpo:~$</span> <span class="terminal-cmd">connect
+                            --identity</span>
+                    </div>
+                    <div class="terminal-output" id="terminal-loading">
+                        INITIALIZING PROTOCOL...<br>
+                        ESTABLISHING SECURE HANDSHAKE...<br>
+                        [CONNECTED TO K.A. ATTIKPO NODE]
+                    </div>
+                    <div class="terminal-line">
+                        <span class="terminal-prompt">visitor@attikpo:~$</span> <span class="terminal-cmd">cat
+                            contact_information.json</span>
+                    </div>
+                    <div class="terminal-output">
+                        {<br>
+                        &nbsp;&nbsp;"identity": <span class="text-cyan">"Kodjo Arsène Attikpo"</span>,<br>
+                        &nbsp;&nbsp;"location": <span class="text-cyan">"Lomé, Togo"</span>,<br>
+                        &nbsp;&nbsp;"email": "<a href="mailto:arsene.thedatascientist@gmail.com"
+                            class="terminal-link">arsene.thedatascientist@gmail.com</a>",<br>
+                        &nbsp;&nbsp;"tel": "<a href="tel:+22899595766" class="terminal-link">+228 99 59 57 66</a>",<br>
+                        &nbsp;&nbsp;"status": <span class="text-green">"Active Communication Enabled"</span><br>
+                        }
+                    </div>
+                    <div class="terminal-line prompt-interactive">
+                        <span class="terminal-prompt">visitor@attikpo:~$</span> <span class="terminal-input"
+                            id="terminal-user-input"></span><span class="terminal-cursor" id="terminal-cursor">█</span>
+                    </div>
+                    <div class="terminal-quick-cmds">
+                        <span class="cmd-help-text">Cliquez sur une commande rapide :</span>
+                        <button class="btn-cmd" data-cmd="help">--help</button>
+                        <button class="btn-cmd" data-cmd="skills">--list-skills</button>
+                        <button class="btn-cmd" data-cmd="projects">--list-projects</button>
+                        <button class="btn-cmd" data-cmd="clear">--clear</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Liens de contact formels -->
+            <div class="contact-links-grid">
+                <a href="mailto:arsene.thedatascientist@gmail.com" class="contact-card">
+                    <div class="contact-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                            <polyline points="22,6 12,13 2,6" />
+                        </svg>
+                    </div>
+                    <span class="contact-label">Email</span>
+                    <span class="contact-value">arsene.thedatascientist@gmail.com</span>
+                </a>
+
+                <a href="https://www.linkedin.com/in/kodjo-arsene-attikpo-963311247/" target="_blank"
+                    class="contact-card">
+                    <div class="contact-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                            <rect x="2" y="9" width="4" height="12" />
+                            <circle cx="4" cy="4" r="2" />
+                        </svg>
+                    </div>
+                    <span class="contact-label">LinkedIn</span>
+                    <span class="contact-value">in/kodjo-arsene-attikpo</span>
+                </a>
+
+                <a href="https://github.com/ArseneTogo20" target="_blank" class="contact-card">
+                    <div class="contact-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path
+                                d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+                        </svg>
+                    </div>
+                    <span class="contact-label">GitHub</span>
+                    <span class="contact-value">github.com/kodjoarsene</span>
+                </a>
+            </div>
+
+            <!-- Copyright -->
+            <div class="footer-bottom">
+                <p class="copyright">&copy; 2026 KODJO ARSÈNE ATTIKPO. Tous droits réservés.</p>
+                <p class="system-meta" id="system-mode-trigger" style="cursor: pointer;"
+                    title="Double-cliquez pour administrer">[LOC: Lomé, Togo] | [LANG: FR/EN] | [MODE: SECURE_STATIC]
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal de connexion Admin -->
+    <div id="admin-modal" class="admin-modal">
+        <div class="admin-modal-content">
+            <button class="close-modal" id="close-admin-modal">&times;</button>
+            <h3><span class="text-cyan">//</span> INITIALISER DROITS D'ACCÈS</h3>
+            <p class="modal-sub">Veuillez saisir la clé d'accès administrateur pour activer l'éditeur visuel.</p>
+            <form id="admin-login-form">
+                <div class="form-group">
+                    <label for="admin-password">CLE D'ACCES :</label>
+                    <input type="password" id="admin-password" placeholder="Mot de passe admin (ex: admin)..." required
+                        autocomplete="current-password">
+                </div>
+                <div id="login-error" class="login-error">Accès refusé. Clé d'accès incorrecte.</div>
+                <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 1rem;">Valider la
+                    clé</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Panneau de contrôle Administrateur (visible après connexion) -->
+    <div id="admin-panel" class="admin-panel">
+        <div class="admin-panel-header">
+            <h4>PANNEAU ADMIN</h4>
+            <span class="admin-status">MODE ÉDITION ACTIF</span>
+        </div>
+        <div class="admin-panel-body">
+            <p class="admin-help">Double-cliquez sur un texte pour le modifier en direct. Vous pouvez aussi glisser des
+                photos/vidéos.</p>
+            <div class="admin-actions">
+                <button id="admin-add-exp" class="btn-admin-action">➕ Ajouter Expérience</button>
+                <button id="admin-add-edu" class="btn-admin-action">➕ Ajouter Formation/Engagement</button>
+                <button id="admin-add-project" class="btn-admin-action">➕ Ajouter Projet</button>
+                <button id="admin-export-html" class="btn-admin-action btn-admin-save">📥 Exporter index.html mis à
+                    jour</button>
+                <button id="admin-logout" class="btn-admin-action btn-admin-exit">🔒 Déconnexion</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
