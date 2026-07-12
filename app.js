@@ -313,7 +313,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const addEduBtn = document.getElementById('admin-add-edu');
     const addProjBtn = document.getElementById('admin-add-project');
 
-    const PASSWORD_ADMIN = 'admin'; // Mot de passe admin local
+    // RÈGLE DE CYBERSÉCURITÉ : Modifiez 'admin' par votre propre clé d'accès secrète avant de pousser en ligne !
+    const PASSWORD_ADMIN = 'admin'; // Clé d'accès administrateur locale
 
     // Activer le modal de connexion sur double-clic
     if (modeTrigger) {

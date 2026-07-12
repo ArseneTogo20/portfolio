@@ -50,10 +50,13 @@ Accédez ensuite à l'adresse `http://localhost:8000`.
 
 ## ⚙️ Utilisation du Mode Administration Local
 
-Le portfolio intègre un mode éditeur en direct pour mettre à jour les données :
+Le portfolio intègre un mode éditeur en direct pour mettre à jour vos données en local de manière autonome :
 
 1. Faites défiler la page jusqu'au footer (droite du copyright).
 2. **Double-cliquez** sur le texte `[MODE: SECURE_STATIC]`.
-3. Entrez le mot de passe local par défaut : `admin`.
+3. Entrez la clé d'accès configurée dans vos fichiers sources (définie par la constante `PASSWORD_ADMIN` dans `app.js`).
 4. Vous pouvez désormais éditer n'importe quel texte directement à l'écran et modifier les images (profil, projets) via les boutons de survol.
-5. Une fois terminé, cliquez sur **Exporter en Statique** dans le volet d'administration supérieur pour télécharger le fichier `index.html` prêt pour la production.
+5. Une fois terminé, cliquez sur **Exporter en Statique** dans le volet d'administration supérieur pour télécharger le fichier `index.html` propre, prêt pour la production.
+
+> [!IMPORTANT]
+> **Règle de Cybersécurité** : Pour empêcher les visiteurs d'activer ce panneau d'édition sur votre version publique en ligne, modifiez la valeur de `PASSWORD_ADMIN` dans `app.js` avec votre propre clé secrète personnelle avant de pousser vos modifications sur GitHub.
